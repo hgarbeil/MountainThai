@@ -1,0 +1,583 @@
+/* color palette
+Mauve: #A96762
+
+Deep Blue: #2F5C8F
+
+Mandarin: #d85c27
+
+Lavender: #b999be
+
+Night Moon: #14365d */
+
+
+
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body{
+    margin:0 ;
+    font-family: 'Poppins', sans-serif;
+    background-color: blue;
+
+}
+
+.navbar {
+    display: flex ;
+    position : relative ;
+    justify-content: space-between ;
+    /* align-items: center ; */
+    width: 100vw ;
+    height: 220px ; 
+    padding: 20px ;
+    background-color: navy ;
+    /* background-image : url("https://images.unsplash.com/photo-1596879857570-7b6b9018bcb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
+    color:  lightyellow ;
+    overflow: hidden ;
+    background-size: cover ;
+    box-shadow: 0 4p 8px rgba(0,0,0,.3) ;
+    border-bottom: solid 2px lightblue ;
+}
+
+.navbrand {
+    /* background-color : lightyellow; */
+    background-color : rgb(0,0,130);
+    color: lightyellow ;
+    border: solid 2px lightblue ;
+    border-radius: 15px ;
+    box-shadow : 0px 4px 8px rgb(0,0,0,.3);
+    padding: 20px ;
+    font-size:1.4em ;
+    text-align: center ;
+    
+}
+
+.navbrand a {
+    color : white ;
+}
+.navbrand a:link { text-decoration: none; }
+
+
+.navbrand a:visited 
+{ text-decoration: none; }
+
+
+.navbrand a:hover { 
+    text-decoration: none; 
+    color: red ;
+}
+
+.navbrand a:active { text-decoration: none; }
+.navbrand h4 {
+    font-style : italic;
+}
+
+.navphone {
+    
+    /* background-color: #ff8800 ; */
+    padding: 10px ;
+    margin-left: 20px ;
+    border-radius : 15px ;
+    font-size: 1.em ;
+    font-style: italic ;
+    color: white ;
+    text-align : center ;
+}
+.navphone p{
+    font-size: .8em ;
+    
+    
+}
+.navlogo {
+    border-radius: 5px ;
+    background-image : url("../images/elephant.jpg") ;
+    background-size:cover ;
+    background-color: rgba(120,120,30,.3) ;
+    background-blend-mode: multiply ;
+    width: 160px ;
+    height: 160px ;
+    margin-right : 3px ;
+    
+}
+.navmenuphone {
+    display:flex ;
+    flex-direction: column;
+    margin-top: 0px ;
+}
+.navmenu {
+    
+    /*right: 0 ; */
+    display:flex ;
+    padding:0 ;
+    margin-top: 0px ;
+    margin-bottom: 5px ;
+    font-size: 1.em ;
+    list-style-type : none ;
+    height: 100px ;
+    
+    
+
+    
+}
+
+.navmenu li a {
+    text-decoration: none ;
+    padding: 15px ;
+    color:  lightyellow;
+    background-color: blue ;
+    display:flex ;   
+    flex-direction:column ;
+    /* border: solid 2px ; */
+    border-radius : 3px ;
+    font-size: 1.2em ;
+    
+}
+
+.active.navitems {
+    background: gray ;
+
+}
+.text-center {
+    text-align : center ;
+}
+
+.navmenu li a:hover {
+    color: purple ;
+    background: orangered ;
+    border-radius: 15px ;
+}
+.main-content {
+    width: 100%;
+    /* display: flex ; */
+    flex-direction: column ;
+    align-items : center ;
+    
+    overflow:visible;
+}
+.main-content section.row {
+    display:flex ;
+    flex-wrap : wrap ;
+    justify-content: space-evenly;
+    
+}
+
+.main-content section.menu-items-block{
+    align-items: center ;
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content : center ;
+
+}
+/* .main-content form{
+    align-items: center ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+}  */
+.contactform {
+    display:flex ;
+    flex-direction: column ; 
+    width : 90%;
+    font-size: 1.2em;
+    color:  navy;
+    /* background-color: white; */
+    font-family: 'Oxygen', sans-serif;
+  
+  
+  }
+  
+  .contact-container {
+    /* text-indent: 25px ; */
+    padding: 25px ;
+    background: lightyellow ;
+    color: navy ;
+  }
+  
+  .contactfield {
+    flex-grow: 1 ;
+    flex-shrink: 0 ;
+    width: 300px ;
+    /* color:black ; */
+  
+  }
+  
+  input.contactfield  {
+    color: black ;
+    border-radius:5px ;
+  }
+  #contactmessage {
+    font-size: 16px;
+    color: #222;
+    
+    background-color: #fff ;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 5px ;
+  }
+  #submitButton {
+    background-color : blue ;
+    color: lightyellow ;
+    padding: 10px ;
+    width: 200px ;
+    font-size: 1.2em ;
+    border-radius: 8px ;
+  }
+  
+
+.aboutMTtext {
+    background-color: lightyellow ;
+    color : navy ;
+    text-indent:25px ;
+    padding: 20px ;
+    line-height: 2.5em ;
+    font-size: 1.2em ;
+    border : solid 5px navy ;
+}
+
+.jumbotron {
+    background-image : url(../images/diningroom_1200r.png) ;
+    background-size : cover ;
+    height:532px ;
+
+    
+}
+.panel-footer {
+    clear: both ;
+    background-color: lightblue ;
+}
+footer .row {
+    display: flex ;
+    justify-content: space-between;
+    background-color: black ;
+    color: lightyellow;
+
+}
+
+.footeritem{
+    width: 30% ;
+    padding: 20px ;
+}
+.main-content {
+    background-color : blue ;
+    margin-top: 0 ;
+    align-items : center ;
+    overflow: auto;
+}
+.home-text {
+    margin: 20px ;
+    background-color: lightblue ;
+    padding: 10px ;
+    border-radius: 8px ;
+    font-size : 1.2em ;
+
+}
+#home-tiles {
+    display:flex ;
+    justify-content: space-between;
+    padding: 15px ;
+}
+.menu-tile-div,.map-tile-div {
+    width: 48% ;
+    height: 300px ;
+}
+
+#menu-tile {
+    background-image : url("../images/menu-tile.jpg") ;
+    background-size :cover ;
+    width: 50% ; 
+    height: 300px ;
+    border-radius: 8px ;
+    position: absolute ;
+}
+
+#map-tile {
+    width: 100% ;
+    position : relative ;
+    height: 300px ;
+    border-radius: 8px ;
+}  
+
+
+#menu-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: lightyellow;
+    opacity: .8;
+  }
+
+.menu-category {
+    /* float: left ; */
+    margin: 20px ;
+    width: 200px ;
+    height: 200px ;
+    background-color: blue ;
+    color: lightyellow ;
+}
+
+#menu-categories-title {
+    color: lightyellow ;
+    font-size : 1.2em ;
+    text-align : center ;
+}
+.menu-categories-subhead {
+    color: lightyellow ;
+    text-align : center ;
+    font-style: italic ;
+
+}
+.category-tile {
+    overflow: hidden ;
+    align-items: center ;
+}
+.category-tile span {
+    color: lightyellow ;
+    margin: 10px ;
+
+}
+.menu-item-tile {
+    /* background-color: #81122f; */
+    position: relative ;
+    float: left ;
+    margin: 10px;
+    min-height:100px ;
+    width: 90% ;
+    border: 2px solid navy;
+    padding : 8px ;
+    border-radius: 10px ;
+    
+  
+  }
+  .menu-item-tile hr {
+    width: 80%; 
+  
+  }
+
+.menu-item-tile .menu-item-price {
+    /*background-color: #557c3e;
+    */
+    font-size: 1.1em;
+    /* text-align: right; */
+    position : absolute ;
+    bottom:5px;
+    right:5px ;
+    max-height : 30px ;
+    min-width: 85%;
+    
+    display:flex ;
+    flex-direction: row-reverse ;  
+  }
+  
+  .menu-item-price div.pricedesc {
+    flex : 1 1 0 ;
+    flex-wrap: nowrap ;
+    text-align: right ;
+    margin-right: 5px ;
+    
+  }
+  
+  .menu-item-tile .menu-item-price span {
+    font-style : italic ;
+    margin-left : 5px ;
+
+  }
+  
+  
+  .menu-item-title-block #short-name-tag {
+    position: absolute ;
+    top:10px ;
+    left: 10px ;
+    background-color: #559c3e;
+    width: 10% ;
+    /* float: left ; */
+    text-align: center;
+    border-radius:5px ;
+    margin-right: 8px ;
+    
+  }
+
+
+.menu-item-description {
+    background-color: lightyellow ;
+    padding: 20px ;
+}
+.menu-item-details {
+    /*background: lightseagreen ; */
+}
+.menu-title-special {
+    color: white ;
+}
+.noshow.menu-item-details {
+    display: none ;
+}
+.menu-item-description {
+    padding-right: 5px;
+  }
+  h3.menu-item-title {
+    margin: 0 0 10px;
+    text-align: center ;
+  }
+  .menu-item-details {
+    font-size: .9em;
+    font-style: italic;
+  }
+  
+
+/* MEDIA screen size query adjustments */
+@media (min-width:901px)and (max-width:1200px){
+    .navbar{
+        height: 230px ;
+        align-items: start ;
+        
+    }
+    .navbrand{
+        font-size: .9em ;
+        padding: 8px ;
+        margin-top:10px ;
+    }
+    .navmenu {
+        font-size : .9em ;
+        margin-top: 5px ;
+    }
+    
+}
+
+/* remove logo if screen is 0 - 968 px */
+@media (max-width:968px){
+    .navlogo {
+        display: none ;
+     }
+     .navmenu {
+        font-size : .7em ;
+        margin-top: 5px ;
+    }
+    .menu-tile-div,.map-tile-div {
+        width: 95% ;
+        height: 300px ;
+    }
+    #menu-tile {
+        background-image : url("../images/menu-tile.jpg") ;
+        background-size :cover ;
+        width: 50% ; 
+        height: 300px ;
+        border-radius: 8px ;
+        position: absolute ;
+    }
+
+}
+
+/* 
+
+@media (max-width:900px){
+    .navbar {
+        height: 250px ;
+
+    }
+    .navbrand {
+        font-size: .9em ;
+    }
+    .navmenu {
+        margin-top: 40px ;
+        margin-left: 20px ;
+        font-size : .8em ;
+    }
+} */
+
+@media (min-width:769px) and (max-width:900px){
+    .navbar {
+        height: 240px ;
+    
+    }
+    .navbrand {
+        font-size :.9em ;
+    }
+
+}
+
+@media (min-width:468px) and (max-width:768px){
+    
+    .navbar {
+         height: 250px ;
+    }
+
+    .navphone{
+        font-size: .8em ;
+        padding: 5px ;
+    }
+    .navmenu {
+        margin-bottom:2px ;
+        margin-left: 8px ;
+        display:flex ;
+        flex-wrap: wrap ;
+        text-align : center ;
+    }
+    .navitems  {
+        font-size: .7em ;
+        padding: 5px ;
+        margin: 3px ;
+    }
+    .navitems a span {
+        visibility : hidden ;
+    }
+    .navbrand {
+        font-size :.9em ;
+    }
+
+    #home-tiles{
+        display: flex ;
+        flex-direction: column ;
+    }
+    .map-tile{
+        width: 100% ;
+    }
+    .menu-tile{
+        width: 100% ;
+    }
+
+}
+
+@media (max-width:467px){
+    .navbar {
+        height:310px ;
+    }
+    .navmenu {
+        margin-top: 0px ;
+        margin-left: 20px ;
+        flex-direction: column; 
+        flex-grow: 1 ;
+        flex-shrink : 1 ;
+        font-size : .4em ;
+    }
+    .navitems  span {
+        visibility: hidden;
+    }
+    footer .row {
+        display: flex ;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: black ;
+        color: lightyellow;
+    
+    }
+    .footeritem {
+        width:100% ;
+    }
+    #home-tiles{
+        display: flex ;
+        flex-direction: column ;
+    }
+    .map-tile{
+        width: 100% ;
+    }
+    .menu-tile{
+        width: 100% ;
+    }
+
+}

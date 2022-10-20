@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Thai Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlogo"></div>
+        <div class="navbrand">
+
+            <a href='index.html'><h1>Mountain Thai Restaurant</h1></a>
+            <h4>Authentic Thai Cuisine in the White Mts of Arizona</h4>
+        </div>
+        <div class="navmenuphone">
+        <div class="navphone">
+            <h3>Call (928) 368-4166</h3>
+            <p>Dine-in or Take-out</p>
+        </div>
+        <ul class="navmenu">
+            <!-- <li><a href="default.asp">Home</a></li> -->
+            <li><a id="navHomeButton" class="navitems active" href="index.html"><span class="fa-solid fa-home"></span>Home</a></li>
+            <li><a id="navMenuButton" class="navitems" href="#" onclick="$dc.loadMenuCategories();"><span class="fa-solid fa-utensils"></span>Menu</a></li>
+            <li><a id="navContactButton" class="navitems" href="#" onclick="$dc.loadContactPage();""><span class="fa-solid fa-envelope"></span> Contact</a></li>
+            <li><a id="navAboutButton" class="navitems" href="#" onclick="$dc.loadAboutPage();"><span class="fa-solid fa-info"></span>About</a></li>
+            
+        </ul>
+        </div>
+
+    </div>
+    <!-- <div class="jumbotron"></div> -->
+
+    <div id='main-content' class="main-content"></div>
+
+    <footer class="panel-footer">
+        <div class="container">
+          <div class="row">
+            <section id="hours" class="footeritem">
+              <span>Hours:</span><br>
+              Tues-Sat: 11 am - 7:45 pm<br>
+              Closed Sunday and Monday<br><br>
+              <div class="text-center">&copy; <em> Copyright 2022 Mountain Thai Restaurant</em></div>
+            </section>
+            <section id="address" class="footeritem">
+              <span>Address:</span><br>
+              2741 AZ Highway 260<br>
+              Lakeside, AZ 85929<br>
+              (928) 368 - 4166
+              <p>* Dine-in or Take-out. VISA, Mastercard, Discover, AMEX and Debit Cards gladly accepted. No personal checks please.</p>
+              
+            </section>
+            <section id="testimonials" class="footeritem">
+              <p>"The best Thai restaurant I've been to! "</p>
+              <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+            </section>
+          </div>
+          
+        </div>
+
+      </footer> <!--end of footer content-->
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+    
+    
+</body>
+</html>
