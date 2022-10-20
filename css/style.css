@@ -20,8 +20,8 @@ Night Moon: #14365d */
 
 body{
     margin:0 ;
-    font-family: 'Poppins', sans-serif;
-    background-color: blue;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #e7717d;
 
 }
 
@@ -33,30 +33,30 @@ body{
     width: 100vw ;
     height: 220px ; 
     padding: 20px ;
-    background-color: navy ;
+    background-color: #7e855a ;
     /* background-image : url("https://images.unsplash.com/photo-1596879857570-7b6b9018bcb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
     color:  lightyellow ;
     overflow: hidden ;
     background-size: cover ;
     box-shadow: 0 4p 8px rgba(0,0,0,.3) ;
-    border-bottom: solid 2px lightblue ;
+    border-bottom: solid 2px darkgreen ;
 }
 
 .navbrand {
     /* background-color : lightyellow; */
-    background-color : rgb(0,0,130);
-    color: lightyellow ;
-    border: solid 2px lightblue ;
+    background-color : #7e865a;
+    color: #c2cad0 ;
     border-radius: 15px ;
     box-shadow : 0px 4px 8px rgb(0,0,0,.3);
     padding: 20px ;
-    font-size:1.4em ;
+    font-size:1.em ;
+    font-family: 'Lora', serif;
     text-align: center ;
     
 }
 
 .navbrand a {
-    color : white ;
+    color : lightyellow ;
 }
 .navbrand a:link { text-decoration: none; }
 
@@ -73,6 +73,7 @@ body{
 .navbrand a:active { text-decoration: none; }
 .navbrand h4 {
     font-style : italic;
+    font-size: 1.2em ;
 }
 
 .navphone {
@@ -83,11 +84,17 @@ body{
     border-radius : 15px ;
     font-size: 1.em ;
     font-style: italic ;
-    color: white ;
+    color: #c2cad0 ;
     text-align : center ;
+    
 }
-.navphone p{
-    font-size: .8em ;
+#phone a{
+    text-decoration: none ;
+}
+.navphone span{
+    font-size: 1.4em ;
+    color: lightyellow ;
+    text-decoration: none ;
     
     
 }
@@ -97,28 +104,29 @@ body{
     background-size:cover ;
     background-color: rgba(120,120,30,.3) ;
     background-blend-mode: multiply ;
-    width: 160px ;
-    height: 160px ;
-    margin-right : 3px ;
+    box-shadow: (0,0,0,.3);
+    width: 200px ;
+    height: 180px ;
     
 }
 .navmenuphone {
+    position : relative ;
     display:flex ;
     flex-direction: column;
-    margin-top: 0px ;
+    justify-content: space-apart;
+    height:160px ;
 }
 .navmenu {
-    
+    position: absolute ;
+    bottom: 0 ;
+    right: 0 ;
     /*right: 0 ; */
     display:flex ;
     padding:0 ;
-    margin-top: 0px ;
-    margin-bottom: 5px ;
-    font-size: 1.em ;
+    
+    font-size: .8em ;
     list-style-type : none ;
-    height: 100px ;
-    
-    
+    height: 30px ;
 
     
 }
@@ -126,13 +134,15 @@ body{
 .navmenu li a {
     text-decoration: none ;
     padding: 15px ;
-    color:  lightyellow;
-    background-color: blue ;
+    color: white;
+    background-color: #afd275 ;
     display:flex ;   
     flex-direction:column ;
     /* border: solid 2px ; */
-    border-radius : 3px ;
+    border-radius : 1px ;
     font-size: 1.2em ;
+    font-style: italic ;
+    box-shadow : 0. 4px 8px rgb(0,0,0,.3) ;
     
 }
 
@@ -146,9 +156,76 @@ body{
 
 .navmenu li a:hover {
     color: purple ;
-    background: orangered ;
-    border-radius: 15px ;
+    background: lightyellow ;
+    border-radius: 3px ;
 }
+
+.smallscreen {
+    background-color: #7e855a;
+    display: flex ;
+    flex-direction: column;
+    font-size : 1.4em ;
+    text-align : center ;
+    border-bottom : solid 3px darkgreen ;
+}
+/* .smallscreen a {
+    text-decoration : none ;
+    color: lightyellow ;
+    
+
+} */
+.smallscreen-phone {
+    display: flex ;
+    flex-direction: row ;
+    justify-content : space-evenly ;
+    color: lightyellow ;
+    padding : 5px ;
+    font-size: 1.2em ;
+}
+.smallscreen-phone a {
+    color: lightyellow ;
+}
+ul.smallscreen-navmenu {
+    display: flex;
+    flex-direction: row;
+    flex : 1 0 1 ;
+    justify-content: space-between;
+    color: lightyellow ;
+    padding : 5px ;
+    width: 100% ;
+    margin:0 ;
+
+}
+.smallscreen-menu {
+    position: relative ;
+    display: flex ;
+    
+}
+.smallscreen-navmenu li {
+    text-decoration: none ;
+    list-style : none ;
+    width: 25% ;
+}
+.smallscreen-navmenu  li a{
+    text-decoration: none ;
+    padding: 3px ;
+    color: lightyellow;
+    background-color: #afd275 ;
+    display:flex ;   
+    flex-direction:column ;
+    /* border: solid 2px ; */
+    /* border-radius : 1px ; */
+    font-size: .8em ;
+    font-style: italic ;
+    
+}
+.smallscreen-navmenu li a:hover {
+    color: purple ;
+    background: lightyellow ;
+    border-radius: 3px ;
+}
+
+
 .main-content {
     width: 100%;
     /* display: flex ; */
@@ -156,7 +233,7 @@ body{
     align-items : center ;
     
     overflow:visible;
-}
+} 
 .main-content section.row {
     display:flex ;
     flex-wrap : wrap ;
@@ -192,7 +269,7 @@ body{
   .contact-container {
     /* text-indent: 25px ; */
     padding: 25px ;
-    background: lightyellow ;
+    background: #c2b9b0;
     color: navy ;
   }
   
@@ -200,6 +277,7 @@ body{
     flex-grow: 1 ;
     flex-shrink: 0 ;
     width: 300px ;
+    height:30px ;
     /* color:black ; */
   
   }
@@ -217,24 +295,33 @@ body{
     border-radius: 5px ;
   }
   #submitButton {
-    background-color : blue ;
+    background-color : green ;
     color: lightyellow ;
-    padding: 10px ;
+    padding: 6px ;
     width: 200px ;
     font-size: 1.2em ;
     border-radius: 8px ;
+    
+
   }
   
 
 .aboutMTtext {
-    background-color: lightyellow ;
-    color : navy ;
+    background-color: #c2b9b0 ;
+    color : #3e461a ;
     text-indent:25px ;
     padding: 20px ;
     line-height: 2.5em ;
     font-size: 1.2em ;
-    border : solid 5px navy ;
+    /* border : solid 5px navy ; */
+    box-shadow : 0 4px 8px rgb(0,0,0,.3);
+    margin-left: 10px ;
+    margin-right: 10px ;
 }
+h2.aboutMT {
+    text-align : center ;
+    color : lightyellow ;
+} 
 
 .jumbotron {
     background-image : url(../images/diningroom_1200r.png) ;
@@ -258,25 +345,35 @@ footer .row {
 .footeritem{
     width: 30% ;
     padding: 20px ;
+    font-family : 'Oxygen', sans-serif;
 }
 .main-content {
-    background-color : blue ;
+    background-color : #c2b9b0 ;
     margin-top: 0 ;
     align-items : center ;
     overflow: auto;
 }
 .home-text {
     margin: 20px ;
-    background-color: lightblue ;
+    background-color: #c2b9b0;
+    color: #3e461a;
     padding: 10px ;
     border-radius: 8px ;
+    box-shadow: 0px 2px 8px rgb(0,0,0,.3);
+    text-indent: 25px ;
+    
+
+}
+.home-text p {
     font-size : 1.2em ;
+    line-height: 2em ;
 
 }
 #home-tiles {
     display:flex ;
     justify-content: space-between;
     padding: 15px ;
+    box-shadow: 0px 2px 8px rgb(0,0,0,.3);
 }
 .menu-tile-div,.map-tile-div {
     width: 48% ;
@@ -307,7 +404,7 @@ footer .row {
     width: 100%;
     text-align: center;
     font-size: 1.6em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-color: #000;
     color: lightyellow;
     opacity: .8;
@@ -323,12 +420,12 @@ footer .row {
 }
 
 #menu-categories-title {
-    color: lightyellow ;
+    color: navy;
     font-size : 1.2em ;
     text-align : center ;
 }
 .menu-categories-subhead {
-    color: lightyellow ;
+    color: navy ;
     text-align : center ;
     font-style: italic ;
 
@@ -338,7 +435,7 @@ footer .row {
     align-items: center ;
 }
 .category-tile span {
-    color: lightyellow ;
+    color: navy ;
     margin: 10px ;
 
 }
@@ -434,27 +531,45 @@ footer .row {
 @media (min-width:901px)and (max-width:1200px){
     .navbar{
         height: 230px ;
-        align-items: start ;
+        /* align-items: start ; */
         
     }
     .navbrand{
-        font-size: .9em ;
+        font-size: .8em ;
         padding: 8px ;
         margin-top:10px ;
     }
     .navmenu {
-        font-size : .9em ;
-        margin-top: 5px ;
+        font-size : .7em ;
+        flex-shrink: 1;
+        /* position: absolute ;
+        bottom: 0 ; */
     }
-    
+    .navmenuphone{
+        height: 160px ;
+        
+    }
+    #menu-tile {
+        width: 50% ;
+    }
 }
 
 /* remove logo if screen is 0 - 968 px */
 @media (max-width:968px){
-    .navlogo {
+    /* .navlogo {
         display: none ;
+     } */
+     .navmenuphone {
+        display:none ;
      }
-     .navmenu {
+     
+}
+@media (min-width:968px ){
+    .smallscreen{
+        display: none ;
+    }
+}
+     /* .navmenu {
         font-size : .7em ;
         margin-top: 5px ;
     }
@@ -470,8 +585,11 @@ footer .row {
         border-radius: 8px ;
         position: absolute ;
     }
+    .navmenuphone{
+        height: 200px ;
+    }
 
-}
+} */
 
 /* 
 
@@ -498,28 +616,47 @@ footer .row {
     .navbrand {
         font-size :.9em ;
     }
+    .navmenuphone {
+        height:180px ;
+        
+    }
+    #menu-tile {
+        width: 50% ;
+    }
 
 }
 
 @media (min-width:468px) and (max-width:768px){
     
+    .navlogo {
+        display: none ;
+    }
+
     .navbar {
-         height: 250px ;
+         height: 260px ;
     }
 
     .navphone{
-        font-size: .8em ;
+        font-size: 1.em ;
         padding: 5px ;
     }
+
+    .navmenuphone{
+        height: 180px ;
+        width : 280px ;
+        position : relative ;
+        justify-content : space-apart ;
+    }
+
     .navmenu {
-        margin-bottom:2px ;
-        margin-left: 8px ;
+        
+        font-size: .6em ;
         display:flex ;
         flex-wrap: wrap ;
         text-align : center ;
     }
     .navitems  {
-        font-size: .7em ;
+        
         padding: 5px ;
         margin: 3px ;
     }
@@ -534,12 +671,13 @@ footer .row {
         display: flex ;
         flex-direction: column ;
     }
-    .map-tile{
+    div.map-tile-div{
         width: 100% ;
     }
-    .menu-tile{
+    #menu-tile{
         width: 100% ;
     }
+    
 
 }
 

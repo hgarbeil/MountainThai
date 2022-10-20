@@ -13,6 +13,19 @@ var switchItemMenuToActive = function (itemNum) {
     document.querySelector("#navContactButton").className = classes;
     classes = classes.replace(new RegExp("active", "g"), "");
     document.querySelector("#navContactButton").className = classes;
+
+    classes = document.querySelector("#sm_navHomeButton").className;
+    classes = classes.replace(new RegExp("active", "g"), "");
+    document.querySelector("#sm_navHomeButton").className = classes;
+    classes = document.querySelector("#sm_navMenuButton").className;
+    classes = classes.replace(new RegExp("active", "g"), "");
+    document.querySelector("#sm_navMenuButton").className = classes;
+    classes = document.querySelector("#sm_navAboutButton").className;
+    classes = classes.replace(new RegExp("active", "g"), "");
+    document.querySelector("#sm_navAboutButton").className = classes;
+    document.querySelector("#sm_navContactButton").className = classes;
+    classes = classes.replace(new RegExp("active", "g"), "");
+    document.querySelector("#sm_navContactButton").className = classes;
   
     switch (itemNum) {
       case 0 :
@@ -21,12 +34,22 @@ var switchItemMenuToActive = function (itemNum) {
         classes += " active";
         document.querySelector("#navHomeButton").className = classes;
         }
+        classes = document.querySelector("#sm_navHomeButton").className;
+        if (classes.indexOf("active") == -1) {
+        classes += " active";
+        document.querySelector("#sm_navHomeButton").className = classes;
+        }
         break ;
       case 1 :
         classes = document.querySelector("#navMenuButton").className;
         if (classes.indexOf("active") == -1) {
         classes += " active";
         document.querySelector("#navMenuButton").className = classes;
+        }
+        classes = document.querySelector("#sm_navMenuButton").className;
+        if (classes.indexOf("active") == -1) {
+        classes += " active";
+        document.querySelector("#sm_navMenuButton").className = classes;
         }
         break ;
       case 2 :
@@ -35,6 +58,11 @@ var switchItemMenuToActive = function (itemNum) {
           classes += " active";
           document.querySelector("#navAboutButton").className = classes;
         }
+        classes = document.querySelector("#sm_navAboutButton").className;
+        if (classes.indexOf("active") == -1) {
+          classes += " active";
+          document.querySelector("#sm_navAboutButton").className = classes;
+        }
         break ;
       case 3 :
           classes = document.querySelector("#navContactButton").className;
@@ -42,12 +70,22 @@ var switchItemMenuToActive = function (itemNum) {
             classes += " active";
             document.querySelector("#navContactButton").className = classes;
           }
+          classes = document.querySelector("#sm_navContactButton").className;
+          if (classes.indexOf("active") == -1) {
+            classes += " active";
+            document.querySelector("#sm_navContactButton").className = classes;
+          }
           break ;
       default :
         classes = document.querySelector("#navHomeButton").className;
         if (classes.indexOf("active") == -1) {
         classes += " active";
         document.querySelector("#navHomeButton").className = classes;
+        }
+        classes = document.querySelector("#sm_navHomeButton").className;
+        if (classes.indexOf("active") == -1) {
+        classes += " active";
+        document.querySelector("#sm_navHomeButton").className = classes;
         }
         break ;
     
@@ -106,7 +144,7 @@ document.addEventListener ("DOMContentLoaded", function(event){
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
-    // switchItemMenuToActive(1) ;
+    switchItemMenuToActive(1) ;
     showLoading("#main-content");
     $ajaxUtils.sendGetRequest(
       allCategoriesUrl,

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mountain Thai Restaurant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,20 +21,36 @@
         </div>
         <div class="navmenuphone">
         <div class="navphone">
-            <h3>Call (928) 368-4166</h3>
-            <p>Dine-in or Take-out</p>
+            <div id="phone"><a href="tel:9283684166">
+              <span>(928) 368 - 4166</span></a><div>Take-out or Dine-in</div>
+            </div>
         </div>
         <ul class="navmenu">
             <!-- <li><a href="default.asp">Home</a></li> -->
             <li><a id="navHomeButton" class="navitems active" href="index.html"><span class="fa-solid fa-home"></span>Home</a></li>
             <li><a id="navMenuButton" class="navitems" href="#" onclick="$dc.loadMenuCategories();"><span class="fa-solid fa-utensils"></span>Menu</a></li>
-            <li><a id="navContactButton" class="navitems" href="#" onclick="$dc.loadContactPage();""><span class="fa-solid fa-envelope"></span> Contact</a></li>
+            <li><a id="navContactButton" class="navitems" href="#" onclick="$dc.loadContactPage();"><span class="fa-solid fa-envelope"></span> Contact</a></li>
             <li><a id="navAboutButton" class="navitems" href="#" onclick="$dc.loadAboutPage();"><span class="fa-solid fa-info"></span>About</a></li>
             
         </ul>
         </div>
 
     </div>
+    <div class="smallscreen">
+      <div class="smallscreen-phone">
+        <a href="tel:9283684166"><span class="fa-solid fa-phone">(928) 368 - 4166</span></a><div class="text1">Take-out or Dine-in</div>
+      </div>
+      <!-- <div class="smallscreen-menu"> -->
+        <ul class="smallscreen-navmenu">
+          <!-- <li><a href="default.asp">Home</a></li> -->
+          <li><a id="sm_navHomeButton" class="navitems active" href="index.html"><span class="fa-solid fa-home"></span>Home</a></li>
+          <li><a id="sm_navMenuButton" class="navitems" href="#" onclick="$dc.loadMenuCategories();"><span class="fa-solid fa-utensils"></span>Menu</a></li>
+          <li><a id="sm_navContactButton" class="navitems" href="#" onclick="$dc.loadContactPage();"><span class="fa-solid fa-envelope"></span> Contact</a></li>
+          <li><a id="sm_navAboutButton" class="navitems" href="#" onclick="$dc.loadAboutPage();"><span class="fa-solid fa-info"></span>About</a></li>
+          
+      </ul>
+      <!-- </div> -->
+    </div> <!--end of navbar -->
     <!-- <div class="jumbotron"></div> -->
 
     <div id='main-content' class="main-content"></div>
