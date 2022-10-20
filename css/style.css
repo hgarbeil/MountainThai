@@ -33,7 +33,8 @@ body{
     width: 100vw ;
     height: 220px ; 
     padding: 20px ;
-    background-color: #7e855a ;
+    background-color: #7e855a ; 
+    /* background-color: #e7717d; */
     /* background-image : url("https://images.unsplash.com/photo-1596879857570-7b6b9018bcb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"); */
     color:  lightyellow ;
     overflow: hidden ;
@@ -44,7 +45,8 @@ body{
 
 .navbrand {
     /* background-color : lightyellow; */
-    background-color : #7e865a;
+    /* background-color : #7e865a; */
+    background-color : #d85c27 ;
     color: #c2cad0 ;
     border-radius: 15px ;
     box-shadow : 0px 4px 8px rgb(0,0,0,.3);
@@ -135,7 +137,7 @@ body{
     text-decoration: none ;
     padding: 15px ;
     color: white;
-    background-color: #afd275 ;
+    background-color: #d85c27 ;
     display:flex ;   
     flex-direction:column ;
     /* border: solid 2px ; */
@@ -210,7 +212,7 @@ ul.smallscreen-navmenu {
     text-decoration: none ;
     padding: 3px ;
     color: lightyellow;
-    background-color: #afd275 ;
+    background-color:#d85c27 ;
     display:flex ;   
     flex-direction:column ;
     /* border: solid 2px ; */
@@ -259,7 +261,7 @@ ul.smallscreen-navmenu {
     flex-direction: column ; 
     width : 90%;
     font-size: 1.2em;
-    color:  navy;
+    color: #3e461a;
     /* background-color: white; */
     font-family: 'Oxygen', sans-serif;
   
@@ -270,7 +272,7 @@ ul.smallscreen-navmenu {
     /* text-indent: 25px ; */
     padding: 25px ;
     background: #c2b9b0;
-    color: navy ;
+    color: lightyellow ;
   }
   
   .contactfield {
@@ -320,7 +322,7 @@ ul.smallscreen-navmenu {
 }
 h2.aboutMT {
     text-align : center ;
-    color : lightyellow ;
+    color : #3e461a ;
 } 
 
 .jumbotron {
@@ -415,17 +417,19 @@ footer .row {
     margin: 20px ;
     width: 200px ;
     height: 200px ;
-    background-color: blue ;
-    color: lightyellow ;
+    background-color: #c2b9b0;
+    color: #3e461a;
 }
 
 #menu-categories-title {
-    color: navy;
+    background-color: #c2b9b0;
+    color: #3e461a;
     font-size : 1.2em ;
     text-align : center ;
 }
 .menu-categories-subhead {
-    color: navy ;
+    background-color: #c2b9b0;
+    color: #3e461a;
     text-align : center ;
     font-style: italic ;
 
@@ -435,7 +439,8 @@ footer .row {
     align-items: center ;
 }
 .category-tile span {
-    color: navy ;
+    background-color: #c2b9b0;
+    color: #3e461a;
     margin: 10px ;
 
 }
