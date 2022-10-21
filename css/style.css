@@ -31,7 +31,7 @@ body{
     justify-content: space-between ;
     /* align-items: center ; */
     width: 100vw ;
-    height: 220px ; 
+    /* height: 100px ;  */
     padding: 20px ;
     background-color: #7e855a ; 
     /* background-color: #e7717d; */
@@ -50,7 +50,7 @@ body{
     color: #c2cad0 ;
     border-radius: 15px ;
     box-shadow : 0px 4px 8px rgb(0,0,0,.3);
-    padding: 20px ;
+    padding: 10px ;
     font-size:1.em ;
     font-family: 'Lora', serif;
     text-align: center ;
@@ -116,7 +116,7 @@ body{
     display:flex ;
     flex-direction: column;
     justify-content: space-apart;
-    height:160px ;
+    height:190px ;
 }
 .navmenu {
     position: absolute ;
@@ -535,13 +535,13 @@ footer .row {
 /* MEDIA screen size query adjustments */
 @media (min-width:901px)and (max-width:1200px){
     .navbar{
-        height: 230px ;
-        /* align-items: start ; */
-        
+        height: 220px ;
     }
+    
     .navbrand{
-        font-size: .8em ;
-        padding: 8px ;
+        font-size: .9em ;
+        padding: 14px ;
+        
         margin-top:10px ;
     }
     .navmenu {
@@ -551,7 +551,7 @@ footer .row {
         bottom: 0 ; */
     }
     .navmenuphone{
-        height: 160px ;
+        height: 190px ;
         
     }
     #menu-tile {
