@@ -328,9 +328,7 @@ h2.aboutMT {
 .jumbotron {
     background-image : url(../images/diningroom_1200r.png) ;
     background-size : cover ;
-    height:532px ;
-
-    
+    height:532px ;  
 }
 .panel-footer {
     clear: both ;
@@ -446,16 +444,16 @@ footer .row {
 }
 .menu-item-tile {
     /* background-color: #81122f; */
+    background-color: lightyellow;
     position: relative ;
     float: left ;
     margin: 10px;
     min-height:100px ;
     width: 90% ;
-    border: 2px solid navy;
+    border: 2px solid green;
     padding : 8px ;
     border-radius: 10px ;
-    
-  
+   
   }
   .menu-item-tile hr {
     width: 80%; 
@@ -471,7 +469,7 @@ footer .row {
     bottom:5px;
     right:5px ;
     max-height : 30px ;
-    min-width: 85%;
+    width: 100%;
     
     display:flex ;
     flex-direction: row-reverse ;  
@@ -482,6 +480,8 @@ footer .row {
     flex-wrap: nowrap ;
     text-align: right ;
     margin-right: 5px ;
+    font-size : .9em ;
+    font-family: sans-serif;
     
   }
   
@@ -629,6 +629,12 @@ footer .row {
         width: 50% ;
     }
 
+    .jumbotron {
+        background-image : url(../images/diningroom_968r.png) ;
+        background-size : cover ;
+        height:449px ;  
+    }
+
 }
 
 @media (min-width:468px) and (max-width:768px){
@@ -638,7 +644,14 @@ footer .row {
     }
 
     .navbar {
-         height: 260px ;
+        display: block ;
+         height: 180px ;
+         text-align: center ;
+         align-items: center ;
+    }
+
+    .navbrand {
+        height: 150px ;
     }
 
     .navphone{
@@ -682,13 +695,24 @@ footer .row {
     #menu-tile{
         width: 100% ;
     }
-    
+    .jumbotron {
+        background-image : url(../images/diningroom_768r.png) ;
+        background-size : cover ;
+        height:353px ;  
+    }
 
 }
 
 @media (max-width:467px){
     .navbar {
-        height:310px ;
+        height:220px ;
+        align-items: center ;
+    }
+    .navbrand {
+        height : 200px ;
+    }
+    .navlogo {
+        display : none ;
     }
     .navmenu {
         margin-top: 0px ;
@@ -716,11 +740,18 @@ footer .row {
         display: flex ;
         flex-direction: column ;
     }
-    .map-tile{
+    div.map-tile-div{
         width: 100% ;
     }
-    .menu-tile{
+    #menu-tile{
         width: 100% ;
+    }
+    .jumbotron {
+        display: none ;
+    }
+
+    .menu-item-tile * {
+        font-size: .9em ;
     }
 
 }
